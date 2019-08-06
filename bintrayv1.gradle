@@ -36,7 +36,8 @@ properties.load(project.rootProject.file('local.properties').newDataInputStream(
 bintray {
     user = properties.getProperty("bintray.user")
     key = properties.getProperty("bintray.apikey")
-
+    userOrg = properties.getProperty("bintray.organization")
+    
     configurations = ['archives']
     pkg {
         repo = bintrayRepo
